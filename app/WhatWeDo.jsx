@@ -11,7 +11,7 @@ import Image from 'next/image'
 //     image: '/images/property.jpg',
 // }
 
-const WhatWeDo = () => {
+const WhatWeDo = ({ heading = 'What we do'}) => {
 
     const services = [
         {
@@ -30,7 +30,7 @@ const WhatWeDo = () => {
             <div className="overlayBottomBox"></div>
             <div className="slantLg bg-primary-blue px-5 md:px-10 py-36 md:py-[500px]">
             <div className="container mx-auto">
-                <h2 className="uppercase text-2xl md:text-5xl font-bold text-center tracking-widest mb-28">What we do</h2>
+                <h2 className="uppercase text-2xl md:text-5xl font-bold text-center tracking-widest mb-28">{heading}</h2>
                 {services && services.map((service) => (
                     <div key={service.id} className="gap-20 flex md:justify-center md:items-center flex-col-reverse md:flex-row">
                         <div className="md:w-1/2 text-center md:text-right">
