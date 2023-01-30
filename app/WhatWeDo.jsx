@@ -41,7 +41,7 @@ const WhatWeDo = ({ heading = 'What we do'}) => {
                                 {service.description}
                             </p>
                             <div className="pt-10 text-center md:text-right">
-                                <Link className="primaryButton uppercase font-bold text-primary-blue transition-all	hover:bg-primary-blue hover:text-white border-2 hover:border-2 border-white" href="/">Check out our work</Link>
+                                <Link className="primaryButton bg-white uppercase font-bold text-primary-blue transition-all	hover:bg-primary-blue hover:text-white border-2 hover:border-2 border-white" href="/">Check out our work</Link>
                             </div>
                         </div>
                         <div className="md:w-1/2 mx-auto">
